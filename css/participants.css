@@ -1,0 +1,51 @@
+/* Existing CSS rules */
+body {
+    font-family: Arial, sans-serif;
+    
+}
+
+/* New styles for the participants page */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.participants-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Increase the minimum width to 300px */
+    grid-gap: 20px;
+    justify-content: center;
+    margin: 40px auto;
+    max-width: 1000px;
+    color: white;
+}
+
+.participant {
+    text-align: center;
+    padding: 20px; /* Increase padding for more space around the content */
+    background-color: #00324e;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.participant img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.participant h2 {
+    margin-top: 10px;
+}
+
+.sponsors {
+    /* ... (existing CSS rules) ... */
+}
+
+/* Adding background GIF */
+body {
+    background-image: url('images/your-gif-file.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

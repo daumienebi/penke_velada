@@ -1,0 +1,156 @@
+@import url(menu.css);
+@import url(banner.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'Arial',sans-serif;
+    background-color: #00324e
+}
+
+main{
+    margin-top: 80px;
+}
+
+.time_n_date{
+    color: white;
+    font-size: 20px;
+    font-family: 'Arial';
+    margin: 20px auto;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.full-width-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    padding: 0;
+    
+}
+
+header{
+    /** cosas de la cabecera*/
+    width: 100%;
+    height: 70px;
+    background: #00324e;
+    color: #fff;
+    
+    /** su posicionamiento*/
+    position:fixed;
+    top:0;
+    left: 0;
+    z-index: 100;
+}
+
+.contenedor{
+    width: 98%;
+    margin: auto;
+    
+}
+h1{
+    float: left;
+}
+header.contenedor{
+    display: table;
+}
+
+header h1{
+ color : white
+}
+
+.copy{
+    font-size: 20px;
+}
+
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px; /* Add some margin if needed */
+}
+
+.sponsor-list-container {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.sponsor-list img {
+    width: 100px; /* Set the desired width for all sponsor images */
+    height: 100px; /* Set the desired height for all sponsor images */
+    margin: 10px; /* Add some margin to create space between images */
+    border-radius: 5px; /* Optional: Add a rounded border to the images */
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+    padding-bottom: 25px;
+    color: white;
+}
+
+.sociales {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.sociales a {
+    color: #00324e;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    /* Add the following to center the content in the footer */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*
+    Para no mostrar el banner del hoster (000webhost.com)
+*/
+img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]{
+    display:none;
+}
+
+
+@media(min-width:768px){
+    .sociales{
+        width: auto;
+    }
+    /** a partir de tablet para que cada uno se coloca en un extremo, el copy en uno y los iconos en otra */
+    footer .contenedor{
+        justify-content: space-between;
+    }
+}
+
+
+@media(min-width:1024px){
+    .contenedor{
+        width: 1000px;
+    } 
+    
+}
+
+
+@media(max-width:480px){
+    #randomVids{
+    width: 40x;
+    
+    }
+    #randomVids.iframe{
+        width: 200px;
+    }
+    
+}

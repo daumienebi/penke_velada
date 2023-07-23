@@ -1,0 +1,64 @@
+#banner{
+    margin-top: 50px;
+    position: relative;
+    
+}
+#banner img{
+    width: 100%;
+    height: 100%;
+}
+#banner .contenedor{
+    /** posicionar este contenedor a base a su ancestro que es #banner(con posicion relative)*/
+    position: absolute;
+    /**un top para que el banner esté mas arriba*/
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    color:black;
+}
+
+#banner h2{
+    font-size: 28px;
+}
+#banner a{
+    display: block;
+    padding: 10px;
+    margin-top: 5px;
+    text-decoration: none;
+    width: 100px;
+    display: block;
+    color: #fff;
+    margin-top: 10px;
+    border: solid 2px;
+}
+#banner a:hover{
+    background : rgba(51,51,51,0.5);
+}
+
+@media(min-width:480px){
+    #banner h2{
+        /** a partir del tamaño tablet el h2 será mas grande*/
+        font-size: 40px;
+    }
+    #banner a {
+        margin-top: 25px;
+    }
+}
+
+@media(min-width:768px){
+    #banner{
+        height: 300px;
+        overflow: hidden;
+    }
+    #banner img{
+        height: auto;
+        margin-top: -70px;
+    }
+}
+
+@media(min-width:1024px){
+    #banner img{
+        
+        margin-top: -200px;
+    }
+}
