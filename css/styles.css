@@ -51,9 +51,9 @@ header{
 
 .contenedor{
     width: 98%;
-    margin: auto;
-    
+    margin: 5px auto;  
 }
+
 h1{
     float: left;
 }
@@ -115,6 +115,28 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+}
+
+.copy,
+.aviso-legal {
+    font-size: 16px;
+    margin: 10px;
+}
+
+.aviso-legal a {
+    color: white;
+    text-decoration: none;
+}
+
+.aviso-legal a:hover {
+    text-decoration: underline;
 }
 
 /*

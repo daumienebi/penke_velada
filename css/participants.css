@@ -4,7 +4,6 @@ body {
     
 }
 
-/* New styles for the participants page */
 header {
     text-align: center;
     padding: 20px;
@@ -26,26 +25,21 @@ header {
     background-color: #00324e;
     border: 1px solid #ccc;
     border-radius: 5px;
+    position: relative; /* Add position relative to the participant container */
+    overflow: hidden; /* Hide the overflowing content when the image size increases */
 }
 
 .participant img {
     width: 100%;
     height: auto;
     border-radius: 5px;
+    transition: transform 0.7s ease; /* Add transition for smooth animation */
+}
+
+.participant:hover img {
+    transform: scale(1.4); /* Increase the size of the image on hover */
 }
 
 .participant h2 {
     margin-top: 10px;
-}
-
-.sponsors {
-    /* ... (existing CSS rules) ... */
-}
-
-/* Adding background GIF */
-body {
-    background-image: url('images/your-gif-file.gif');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
