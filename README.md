@@ -1,9 +1,8 @@
 # Penke Velada
 
-La Velada, version penkos en colaboracion con ChatGTP y proyectos antiguos para montar la página rapida.
+La Velada, version penkos
 
-Enlace actual : https://penkevelada.000webhostapp.com/
+Enlace actual : https://www.penkevelada.online
 
-Enlace cuando se actualizen los servidores : https://www.penkevelada.online (Válido durante 1 año)
+Enlace alternativo https://penkevelada.000webhostapp.com
 
-I still dont like web development.
